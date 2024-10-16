@@ -1,11 +1,15 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Inter", sans-serif;
     list-style: none;
     box-sizing: border-box;
     text-decoration: none;
     color: white;
+}
+:root{
+    --cor1: #A45A49;
+    --cor2:#C7BAB3;
 }
 body{
     background-color: #1E1E1E;
@@ -14,21 +18,32 @@ header{
     display: flex;
     gap: 30px;
 }
+main{
+    padding: 0px 80px;
+}
 #header{
     display: flex;
     justify-content: space-around;
     margin: 24px;
     & nav{
         display: flex;
-    }
-    & ul{
-        display: flex;
-        gap: 24px;
+        & ul{
+            display: flex;
+            gap: 24px;
+            & li{
+                & a{
+                    color: #FFF2E7;
+                }
+            }
+        }
     }
 }
 #imagens{
     display: flex;
     gap: 16px;
+    width: 50%;
+    height: 386px;
+    overflow: hidden;
     & ul{
         & li{
         margin-bottom: 5px;
@@ -50,21 +65,85 @@ header{
 }
 #head{
     height: 386px;
-    overflow: hidden;
+    margin-bottom: 64px;
     & header{
         display: flex;
+        justify-content: center;
     }
 }
 #novidade{
-    background-color: red;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 386px;  
+    height: 386px; 
+    width: 480px; 
+    position: relative;
     & h1{
         font-size: 56px;
     }
+    & h2{
+        font-size: 18px;
+        color: var(--cor2);
+        & strong{
+            color: #FFF2E7;
+        }
+    }
 }
 .brown{
-    color: #A45A49;
+    color: var(--cor1);
+    margin: 10px 0px;
+}
+.linha{
+    width: 240px;
+    height: 2px;
+    background-color: var(--cor1);
+    margin: 18px 0px;
+}
+.down{
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    transform: translateY(-50%);
+    width: 56px;
+    height: 56px;
+    background-color: var(--cor1);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    & SVG{
+        width: 24px;
+        height: 24px;
+    }
+    &:hover{
+        width: 58px;
+        height: 58px;
+        transition: .3s;
+        cursor: pointer;
+    }
+}
+#receitas{
+    
+    margin: 0px 20px;
+    & h2{
+        font-size: 32px;
+    }
+}
+.text{
+    color: var(--cor2);
+}
+.comentarios{
+    margin-top: 32px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    padding: 0 20px;
+}
+.nota{
+    display: flex;
+    justify-content: space-between;
+    width: 560px;
+}
+.coment{
+    margin: 24px 0px;
 }
