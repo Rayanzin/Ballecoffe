@@ -137,13 +137,29 @@ main{
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 32px;
-    padding: 0 20px;
+    
+    
+}
+.comentario{
+    width: 560px;
+    background-color: #241A1C;
+    padding: 20px;
+    border-radius: 10px;
 }
 .nota{
     display: flex;
     justify-content: space-between;
-    width: 560px;
+    align-items: center;
+    margin-top: 6px;
+}
+#alta{
+    color: #E7A80E;
 }
 .coment{
     margin: 24px 0px;
+}
+.img{
+    display: flex;
+    gap: 8px;
+    align-items: center;
 }
