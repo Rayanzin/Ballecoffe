@@ -12,19 +12,21 @@
     --cor2:#C7BAB3;
 }
 body{
-    background-color: #1E1E1E;
+    background-color: #1F1517;
 }
 header{
     display: flex;
     gap: 30px;
 }
 main{
-    padding: 0px 80px;
+    margin: auto;
 }
 #header{
+    max-width: 1440px;
     display: flex;
     justify-content: space-around;
-    margin: 24px;
+    padding: 24px;
+    margin: auto;
     & nav{
         display: flex;
         & ul{
@@ -41,7 +43,6 @@ main{
 #imagens{
     display: flex;
     gap: 16px;
-    width: 50%;
     height: 386px;
     overflow: hidden;
     & ul{
@@ -66,9 +67,12 @@ main{
 #head{
     height: 386px;
     margin-bottom: 64px;
+    background-color: #181012;
+    display: flex;
+    justify-content: center;
     & header{
         display: flex;
-        justify-content: center;
+        gap: 135px;
     }
 }
 #novidade{
@@ -123,8 +127,7 @@ main{
     }
 }
 #receitas{
-    
-    margin: 0px 20px;
+    margin: auto;
     & h2{
         font-size: 32px;
     }
@@ -137,8 +140,6 @@ main{
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 32px;
-    
-    
 }
 .comentario{
     width: 560px;
