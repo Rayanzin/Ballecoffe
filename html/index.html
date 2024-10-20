@@ -18,7 +18,7 @@
             <img src="../img/Logo.png" alt="logo">
         </div>
         <nav>
-            <ul>
+            <ul id="navegacao">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Receitas</a></li>
                 <li><a href="#">Novidades</a></li>
@@ -26,7 +26,7 @@
             </ul>
         </nav>
         <div>
-            <a href="#"><strong>Github</strong></a>
+            <a href="https://github.com/Rayanzin" target="_blank"><strong>Github</strong></a>
         </div>
     </header>
     <main>
@@ -39,15 +39,16 @@
                     <h2>Explore dezenas de variações de bebidas favoritas entre os <strong>devs</strong> ao redor do
                         mundo!</h2>
                     <span class="down">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <g id="chevrons-down">
-                                <path id="Vector" d="M7 13L12 18L17 13" stroke="white" stroke-width="2"
-                                    stroke-linecap="round" stroke-linejoin="round" />
-                                <path id="Vector_2" d="M7 6L12 11L17 6" stroke="white" stroke-width="2"
-                                    stroke-linecap="round" stroke-linejoin="round" />
-                            </g>
-                        </svg>
-
+                        <a href="#receitas">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g id="chevrons-down">
+                                    <path id="Vector" d="M7 13L12 18L17 13" stroke="white" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path id="Vector_2" d="M7 6L12 11L17 6" stroke="white" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </g>
+                            </svg>
+                        </a>
                     </span>
                 </div>
                 <div id="imagens">
@@ -99,11 +100,13 @@
             </header>
         </section>
         <section id="receitas">
-            <span class="brown">
-                Receitas
-            </span>
-            <h2>Confira as últimas receitas</h2>
-            <p class="text">Dê uma olhada nas receitas mais amadas!</p>
+            <div id="receita">
+                <span class="brown">
+                    Receitas
+                </span>
+                <h2>Confira as últimas receitas</h2>
+                <p class="text">Dê uma olhada nas receitas mais amadas!</p>
+            </div>
             <div class="comentarios">
                 <div class="comentario">
                     <span id="alta">EM ALTA 🔥</span>
@@ -135,7 +138,7 @@
                         <p>Bom · 3/4 </p>
                     </div>
                     <p class="coment">Para quem gosta de um café amargo.</p>
-                    <div class="img">
+                    <div class="img" id="ajuste">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
                             xmlns:xlink="http://www.w3.org/1999/xlink">
                             <rect width="24" height="24" rx="12" fill="url(#pattern0_632_92)" />
@@ -202,7 +205,11 @@
                 </div>
             </div>
         </section>
+        <p id="load">Carregar mais receitas...</p>
     </main>
+    <footer>
+        <p>Feito por <strong><a href="https://github.com/Rayanzin" target="_blank">Rayan</a></strong></p>
+    </footer>
     <script src="../js/index.js"></script>
 </body>
 

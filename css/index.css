@@ -11,6 +11,10 @@
     --cor1: #A45A49;
     --cor2:#C7BAB3;
 }
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 120px;
+}
 body{
     background-color: #1F1517;
 }
@@ -132,10 +136,16 @@ main{
         font-size: 32px;
     }
 }
+#receita{
+    width: 1150px;
+    margin: auto;
+}
 .text{
     color: var(--cor2);
 }
 .comentarios{
+    margin: auto;
+    max-width: 1160px;
     margin-top: 32px;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -163,4 +173,24 @@ main{
     display: flex;
     gap: 8px;
     align-items: center;
+}
+#load{
+    padding: 20px;
+    text-align: center;
+    color: var(--cor2);
+}
+#ajuste{
+    margin-top: 55px;
+}
+footer{
+    background-color: #23181A;
+    padding: 30px;
+    text-align: center;
+    & p{
+        color: var(--cor2);
+        & a:hover{
+            transition-duration: .3s;
+            border-bottom: 1px solid white;
+        }
+    }
 }
