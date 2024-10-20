@@ -6,6 +6,7 @@
     box-sizing: border-box;
     text-decoration: none;
     color: white;
+    font-size: 16px;
 }
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 :root{
@@ -114,7 +115,6 @@ main{
 }
 .brown{
     color: var(--cor1);
-    margin: 10px 0px;
 }
 .linha{
     width: 240px;
@@ -168,6 +168,7 @@ main{
 }
 .comentario{
     width: 560px;
+    height: 186px;
     background-color: #241A1C;
     padding: 20px;
     border-radius: 10px;
@@ -195,13 +196,13 @@ main{
     text-align: center;
     color: var(--cor2);
 }
-#ajuste{
-    margin-top: 55px;
-}
+
 footer{
+    display: flex;
+    justify-content: center;
     background-color: #23181A;
     padding: 30px;
-    text-align: center;
+    margin-top: 108px;
     & p{
         color: var(--cor2);
         & a:hover{
@@ -216,7 +217,7 @@ footer{
     align-items: center;
     background-color: #181012;
     height: 332px;
-    gap: 200px;
+    gap: 125px;
 }
 #detalhes{
     padding: 24px;
@@ -264,4 +265,92 @@ footer{
     display: flex;
     align-items: center;
     gap: 5px;
+}
+#preparo{
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    & p{
+        color: var(--cor2);
+    }
+}
+#preparo > div{
+    background-color: #23181A;
+    padding: 24px;
+    margin: 24px 0px;
+    border-radius: 10px;
+}
+#checagem{
+    width: 324px;
+}
+#preparo > div > h3, #preparo > div > div > h3{
+    font-size: 24px;
+}
+.incomum{
+    margin-top: 4px;
+    margin-bottom: 32px;
+}
+.passos{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.passos > div{
+    display: flex;
+    justify-content: space-between;
+}
+.passos > div > div{
+   display: flex;
+   align-items: center;
+   gap: 8px;
+}
+.check{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    background-color: #2E2023;
+    border: 1px solid #38282B;
+    border-radius: 5px;
+    cursor: pointer;
+    & .fill{
+        background-color: green;
+        fill: white;
+        height: 100%;
+        width: 100%;
+        border-radius: 5px;
+        transition: .3s;
+        opacity: 0;
+        visibility: hidden;
+        &.active{
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+}
+#orientacao{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 24px;
+}
+#orientacao > li {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+#orientacao > li > span{
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    width: 32px;
+    height: 32px;
+    font-weight: bolder;
+    background-color: #A45A49;
+}
+#orientacao > li > p{
+    font-size: 18px;
 }
