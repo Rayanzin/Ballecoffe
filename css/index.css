@@ -37,7 +37,7 @@ main{
     background-color: #1F1517;
     display: flex;
     justify-content: center;
-    gap: 250px;
+    gap: 300px;
     padding: 24px;
     margin: auto;
     & nav{
