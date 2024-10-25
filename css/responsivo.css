@@ -227,9 +227,6 @@
     #orientacao>li>span {
         padding: 10px;
     }
-    #orientacao>li>p{
-        /* display: none; */
-    }
 
     .comentarios {
         padding: 0px 20px;
