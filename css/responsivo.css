@@ -1,5 +1,241 @@
-@media screen and (max-width:1024px) {
-    main{
-        background-color: blue;
+@media screen and (max-width:1200px) {
+    #header {
+        gap: 150px;
+    }
+
+    #head {
+        & header {
+            justify-content: center;
+            gap: 0;
+
+            & #novidade {
+                width: 30%;
+
+                & h1 {
+                    font-size: 2.3em;
+                }
+
+                & h2 {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+
+    #receitas {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #receita {
+        width: 420px;
+        margin: auto;
+    }
+
+    .comentarios {
+        grid-template-columns: 1fr;
+    }
+
+    #receita-em-alta {
+        gap: 32px;
+
+        & #usuario {
+            width: 350px;
+
+            & h2 {
+                font-size: 2em;
+            }
+        }
+    }
+
+    #preparo {
+        & #modo {
+            width: 530px;
+
+            & #orientacao>li>p {
+                font-size: 14px
+            }
+        }
+    }
+    #orientacao>li>span {
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width:1046px) {
+    #header {
+        gap: 100px;
+
+        & ul>li>a {
+            font-size: 14px;
+        }
+    }
+
+    #head {
+        height: 100%;
+
+        & header {
+            flex-direction: column;
+            gap: 100px;
+
+            & #novidade {
+                height: 386px;
+                width: 480px;
+
+                & h1 {
+                    font-size: 56px;
+                }
+
+                & h2 {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+    #orientacao>li>span {
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width:842px) {
+    #header {
+        gap: 20px;
+
+        & #logo {
+            width: 100px;
+
+            & img {
+                width: 100%;
+            }
+
+        }
+    }
+
+    #receita-em-alta {
+        height: 100%;
+        flex-direction: column;
+        padding: 50px 0px;
+
+        & #usuario {
+            width: 500px;
+
+            & h2 {
+                font-size: 48px;
+            }
+        }
+    }
+
+    #preparo {
+        flex-direction: column;
+        align-items: center;
+        gap: 0px;
+
+        & #modo {
+            width: 500px;
+        }
+
+        & #checagem {
+            width: 500px;
+        }
+    }
+    #orientacao>li>span {
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width:590px) {
+    #head {
+        & header {
+            padding: 0px 20px;
+            width: 100%;
+
+            #novidade {
+                width: 100%;
+
+                & h1 {
+                    font-size: 3em;
+                }
+
+                & h2 {
+                    font-size: 1.2em;
+                }
+            }
+
+            & #imagens {
+                width: 100%;
+                height: 360px;
+
+                & ul {
+                    &:nth-child(1) {
+                        margin-top: -10px;
+                    }
+
+                    &:nth-child(2) {
+                        margin-top: -25px;
+                    }
+
+                    &:nth-child(3) {
+                        margin-top: -60px;
+                    }
+
+                    &:nth-child(4) {
+                        margin-top: -25px;
+                    }
+
+                    width: 25%;
+
+                    & li>img {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+    #navegacao>li:nth-child(3),
+    li:nth-child(4) {
+        display: none;
+    }
+
+    #receita-em-alta {
+        padding: 20px;
+
+        & #usuario {
+            width: 100%;
+        }
+
+        & #detalhes {
+            width: 100%;
+        }
+    }
+
+    #preparo {
+        padding: 20px;
+
+        & #modo,
+        #checagem {
+            width: 100%;
+        }
+    }
+
+    #orientacao>li {
+        gap: 10px;
+        text-align: justify;
+    }
+
+    #orientacao>li>span {
+        padding: 10px;
+    }
+    #orientacao>li>p{
+        /* display: none; */
+    }
+
+    .comentarios {
+        padding: 0px 20px;
+    }
+
+    .comentario {
+        width: 100%;
     }
 }

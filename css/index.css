@@ -37,7 +37,7 @@ main{
     background-color: #1F1517;
     display: flex;
     justify-content: center;
-    gap: 300px;
+    gap: 285px;
     padding: 24px;
     margin: auto;
     & nav{
@@ -212,6 +212,7 @@ footer{
     }
 }
 #receita-em-alta{
+    padding: 0px 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -220,6 +221,7 @@ footer{
     gap: 125px;
 }
 #detalhes{
+    width: 500px;
     padding: 24px;
     background-color: #1F1517;
     border-radius: 10px
@@ -270,6 +272,7 @@ footer{
     display: flex;
     justify-content: center;
     gap: 32px;
+    padding: 20px;
     & p{
         color: var(--cor2);
     }
